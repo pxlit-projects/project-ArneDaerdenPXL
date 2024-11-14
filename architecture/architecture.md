@@ -85,7 +85,7 @@ Each microservice communicates through an **Event Bus** to enable decoupled, asy
 |-----------------|--------------|--------------------------------------------------|--------------------------|
 | `ArticleCreated`| PostService  | Notifies ReviewService of a new article draft.    | ReviewService            |
 | `ArticleApproved` | ReviewService | Signals PostService to publish the article.   | PostService              |
-| `CommentAdded`   | CommentService | Adds a new comment to an article.             | PostService (optional)   |
+| `CommentAdded`   | CommentService | Adds a new comment to an article.             | PostService              |
 
 ---
 
