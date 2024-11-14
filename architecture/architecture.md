@@ -113,7 +113,7 @@ Each microservice communicates through an **Event Bus** to enable decoupled, asy
 - **ArticlePublished**: Emitted by **PostService** on publication. **CommentService** listens to enable commenting.
 - **CommentAdded**: Emitted by **CommentService** when an employee adds a comment, allowing **PostService** to update the comment count.
 
-[View the diagram](./Java-Fullstack-Architectuur.pdf)
+[View the diagram](./FullStack-Java-Architectuur.pdf)
 
 :heavy_check_mark:_(COMMENT) Add a description of the architecture of your application and create a diagram like the one below. Link to the diagram in this document._
 
