@@ -1,16 +1,16 @@
 # Architecture
 
-# C4 Container Diagram Documentation: Internal News Management System
+## C4 Container Diagram Documentation: Internal News Management System
 
-## Introduction / Purpose
+### Introduction / Purpose
 
 This document provides a detailed overview of the container-level architecture for the **Internal News Management System**. The system allows **Editors** to create, review, approve, and publish internal news articles, while **Employees** can view published articles and add comments. The primary goal of this system is to keep employees informed with the latest news and enable easy collaboration and approval processes for editors.
 
-## Users
+### Users
 1. **Editor**: Creates, reviews, approves, and publishes articles.
 2. **Employee**: Views published articles and can leave comments.
 
-## System Overview
+### System Overview
 The application consists of three primary microservices:
 1. **PostService**: Manages article creation, storage, and retrieval.
 2. **ReviewService**: Handles the review and approval workflow for articles.
@@ -77,6 +77,35 @@ Each microservice communicates through an **Event Bus** to enable decoupled, asy
      - **From ReviewService**: `ArticleApproved`, `ArticleRejected`
      - **From CommentService**: `CommentAdded`
 
+### 6. API Gateway
+   - **Technology**: Spring Cloud Gateway (or other suitable solutions like Zuul)
+   - **Description**: The API Gateway is responsible for routing incoming requests to the appropriate microservices, implementing security, rate limiting, and centralizing logging and monitoring.
+   - **Responsibilities**:
+     - Routes incoming API requests to the correct microservices (PostService, ReviewService, CommentService).
+     - Provides a centralized access point for the user interface.
+     - Implements security features like authentication and authorization.
+   - **Interactions**:
+     - **Web Application**: Sends API requests to the API Gateway.
+     - **PostService, ReviewService, CommentService**: The API Gateway routes requests to the appropriate microservices.
+
+### 7. Config Service
+   - **Technology**: Spring Cloud Config
+   - **Description**: The Config Service manages configuration settings for all microservices in the application. It centralizes configuration details like database access, application settings, and other sensitive information.
+   - **Responsibilities**:
+     - Manages configuration settings for PostService, ReviewService, and CommentService.
+     - Enables dynamic configuration loading without requiring service restarts.
+   - **Interactions**:
+     - **PostService, ReviewService, CommentService**: These microservices fetch their configurations from the Config Service.
+
+### 8. Eureka Server (Service Discovery)
+   - **Technology**: Spring Cloud Eureka
+   - **Description**: Eureka Server is a service discovery platform that enables microservices to find and communicate with each other without manually configuring their IP addresses.
+   - **Responsibilities**:
+     - Keeps track of active microservices and their network locations.
+     - Allows other microservices to register and discover their availability.
+   - **Interactions**:
+     - **PostService, ReviewService, CommentService**: These microservices register with the Eureka Server to be discoverable by other services.
+
 ---
 
 ## Event Descriptions
@@ -89,20 +118,12 @@ Each microservice communicates through an **Event Bus** to enable decoupled, asy
 
 ---
 
-## Interactions and Flow
+## Interactions and Flow (Updated)
 
-1. **Article Creation and Review Workflow**:
-   - **Editor** creates a new article in the **Web Application**, which calls **PostService**.
-   - **PostService** saves the draft and emits an `ArticleCreated` event to the **Event Bus**.
-   - **ReviewService** listens to `ArticleCreated` events, retrieves the article, and notifies the **Editor** for approval.
-   - **Editor** reviews and approves the article in the **Web Application**.
-   - **ReviewService** sends an `ArticleApproved` event, which **PostService** listens to for publishing the article.
-
-2. **Employee Interaction and Comments**:
-   - **Employee** views published articles via the **Web Application** by querying **PostService**.
-   - Upon article publication (`ArticlePublished` event), **CommentService** allows **Employees** to post comments.
-   - **Employee** submits a comment, which the **Web Application** sends to **CommentService**.
-   - **CommentService** emits a `CommentAdded` event for potential analytics or notifications.
+1. **Web Application**: Sends all incoming requests to the **API Gateway**.
+2. **API Gateway**: Routes requests to the appropriate microservice (such as **PostService**, **ReviewService**, or **CommentService**) based on the route.
+3. **Microservices**: Register with the **Eureka Server** for service discovery and fetch configurations from the **Config Service**.
+4. **Service Interactions**: Microservices continue to communicate via the **Event Bus** as described in the previous documentation, with events such as **ArticleCreated**, **ArticleApproved**, and **CommentAdded** being pushed by the services.
 
 ---
 
