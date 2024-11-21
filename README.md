@@ -1,6 +1,6 @@
 # Fullstack Java Project
 
-## Firstname Lastname (Class)
+## Arne Daerden (3AONB)
 Change the name and Class in the title above
 
 ## Folder structure
