@@ -1,0 +1,21 @@
+<div class="drafts-container">
+    <h1>Drafts:</h1>
+    <div class="drafts-grid">
+      <!-- Use @for to iterate over drafts -->
+      @for (let draft of drafts) {
+        <div class="draft-card" (click)="openModal(draft)">
+          <h3>{{ draft.title }}</h3>
+          <p class="content">{{ draft.content }}</p>
+          <p class="author"><small>By {{ draft.author }}</small></p>
+        </div>
+      }
+    </div>
+  </div>
+  
+  <!-- Modal for the post form -->
+  @if (isModalOpen) {
+    <div class="modal-content">
+      <button class="close-btn" (click)="closeModal()">×</button>
+      <app-edit-post [draft]="selectedDraft" (formSubmitted)="onFormSubmit($event)"></app-edit-post>
+    </div>
+  }  

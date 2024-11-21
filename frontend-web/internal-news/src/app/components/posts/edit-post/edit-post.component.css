@@ -1,0 +1,75 @@
+/* General form container styling */
+.form-container {
+    max-width: 600px; /* Limit the form width */
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  }
+  
+  /* Form group styling (label + input/textarea) */
+  .form-group {
+    margin-bottom: 15px; /* Spacing between form fields */
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and input */
+    color: #333;
+  }
+  
+  /* Input and textarea styling */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding in width calculation */
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus effect for inputs */
+  .form-control:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight with blue border on focus */
+    background-color: #fff;
+  }
+  
+  /* Button styling */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 15px;
+    }
+  
+    .form-control {
+      padding: 8px;
+    }
+  
+    .submit-btn {
+      padding: 10px;
+    }
+  }
+  
