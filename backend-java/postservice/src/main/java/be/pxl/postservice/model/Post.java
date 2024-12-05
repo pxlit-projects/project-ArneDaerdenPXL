@@ -9,6 +9,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -21,5 +23,6 @@ public class Post {
     private String title;
     private String content;
     private String author;
+    private LocalDate date = LocalDate.now();
     private Boolean isPublished;
 }

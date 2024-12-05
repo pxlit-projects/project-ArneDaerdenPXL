@@ -15,6 +15,10 @@ export class PostService {
         return this.http.post<Post>(this.apiUrl, post);
     }
 
+    getPosts(): Observable<Post[]> {
+        return this.http.get<Post[]>(`${this.apiUrl}`);
+    }
+
     getDrafts(): Observable<Post[]> {
         return this.http.get<Post[]>(`${this.apiUrl}/drafts`);
     }
@@ -26,4 +30,8 @@ export class PostService {
     updatePost(postId: number, updatedPost: Post): Observable<Post> {
       return this.http.put<Post>(`${this.apiUrl}/${postId}`, updatedPost);
     }
+
+    publishPost(id: number): Observable<Post> {
+        return this.http.put<Post>(`${this.apiUrl}/${id}/publish`, {});
+    }    
 }

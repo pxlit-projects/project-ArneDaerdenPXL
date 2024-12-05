@@ -2,20 +2,26 @@ import { Component } from '@angular/core';
 import { PostService } from '../../services/post.service';
 import { Post } from '../../models/post.model';
 import { EditPostComponent } from '../posts/edit-post/edit-post.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-drafts',
   imports: [EditPostComponent],
   template: `<div class="drafts-container">
-    <h1>Drafts:</h1>
+    <h1>Drafts</h1>
     <div class="drafts-grid">
       <!-- Use @for to iterate over drafts -->
-      @for (draft of drafts; track $index) {
-        <div class="draft-card" (click)="openModal(draft)">
-          <h3>{{ draft.title }}</h3>
-          <p class="content">{{ draft.content }}</p>
-          <p class="author"><small>By {{ draft.author }}</small></p>
-        </div>
+      @if (drafts.length === 0) {
+        <h3>No drafts available</h3>
+      } @else {
+        @for (draft of drafts; track $index) {
+          <div class="draft-card" (click)="openModal(draft)">
+            <h3>{{ draft.title }}</h3>
+            <p class="content">{{ draft.content }}</p>
+            <button class="draft-button" (click)="publishPost(draft.id); $event.stopPropagation()">Publish</button>
+            <p class="author"><small>By {{ draft.author }} on {{ draft.date }}</small></p>
+          </div>
+        }
       }
     </div>
   </div>
@@ -29,12 +35,13 @@ import { EditPostComponent } from '../posts/edit-post/edit-post.component';
   }  `,
   styleUrls: ['./drafts.component.css']
 })
+
 export class DraftsComponent {
   drafts: Post[] = [];
   isModalOpen: boolean = false;
   selectedDraft: Post | null = null;
 
-  constructor(private postService: PostService) {}
+  constructor(private postService: PostService, private router: Router) {}
 
   ngOnInit(): void {
     this.loadDrafts();
@@ -44,6 +51,15 @@ export class DraftsComponent {
     this.postService.getDrafts().subscribe((data) => {
       this.drafts = data;
     });
+  }
+
+  publishPost(id: number): void {
+    this.postService.publishPost(id).subscribe(() => {
+        this.drafts = this.drafts.filter((draft) => draft.id !== id);
+    });
+    setTimeout(() => {
+      this.router.navigate(['/posts']);
+    }, 10);
   }
 
   openModal(draft: Post): void {
@@ -63,7 +79,7 @@ export class DraftsComponent {
         this.closeModal();
       });
     } else {
-      console.error('Post ID is required for submission.');
+      console.error('Draft ID is required for submission.');
     }
   }
 }

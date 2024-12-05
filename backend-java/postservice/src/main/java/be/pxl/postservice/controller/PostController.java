@@ -24,8 +24,23 @@ public class PostController {
         return postService.getDrafts();
     }
 
+    @GetMapping()
+    public List<Post> getPosts() {
+        return postService.getPosts();
+    }
+
     @PutMapping("/{id}")
     public Post updatePost(@PathVariable Long id, @RequestBody Post updatedPost) {
         return postService.updatePost(id, updatedPost);
+    }
+
+    @PutMapping("/{id}/publish")
+    public Post publishPost(@PathVariable Long id) {
+        return postService.publishPost(id);
+    }
+
+    @GetMapping("/search")
+    public List<Post> searchPosts(@RequestParam String keyword) {
+        return postService.filterPosts(keyword);
     }
 }

@@ -6,6 +6,7 @@
         <div class="draft-card" (click)="openModal(draft)">
           <h3>{{ draft.title }}</h3>
           <p class="content">{{ draft.content }}</p>
+          <button (click)="publishPost(draft.id)">Publish</button>
           <p class="author"><small>By {{ draft.author }}</small></p>
         </div>
       }

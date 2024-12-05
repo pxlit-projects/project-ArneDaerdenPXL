@@ -22,7 +22,7 @@ import { Post } from '../../../models/post.model';
     <input id="author" formControlName="author" class="form-control" />
   </div>
 
-  <button type="submit" class="submit-btn">Update Post</button>
+  <button type="submit" class="submit-btn" [disabled]="editForm.invalid">Update Post</button>
 </form>`,
   styleUrls: ['./edit-post.component.css']
 })
@@ -47,11 +47,15 @@ export class EditPostComponent implements OnInit {
   }
 
   onSubmit(): void {
-    if (this.draft && this.draft.id) {
-      const updatedPost = { ...this.draft, ...this.editForm.value };
-      this.formSubmitted.emit(updatedPost);
+    if (this.editForm.valid) {
+      if (this.draft && this.draft.id) {
+        const updatedPost = { ...this.draft, ...this.editForm.value };
+        this.formSubmitted.emit(updatedPost);
+      } else {
+        console.error('Draft ID is missing');
+      }
     } else {
-      console.error('Draft ID is missing');
+      console.log('Form is invalid, cannot submit');
     }
   }
 }
