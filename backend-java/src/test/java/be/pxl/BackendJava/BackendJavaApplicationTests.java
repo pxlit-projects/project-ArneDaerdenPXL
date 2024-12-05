@@ -1,10 +1,10 @@
-package be.pxl.postservice;
+package be.pxl.BackendJava;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PostserviceApplicationTests {
+class BackendJavaApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,6 +1,6 @@
 package be.pxl.postservice.repository;
 
-import be.pxl.postservice.model.Post;
+import be.pxl.postservice.domain.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PostRepository extends JpaRepository<Post, Long> {

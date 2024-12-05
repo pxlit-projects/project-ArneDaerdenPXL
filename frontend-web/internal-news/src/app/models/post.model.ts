@@ -3,6 +3,7 @@ export interface Post {
     title: string;
     content: string;
     author: string;
+    status: string;
     isPublished: boolean;
     date: string;
 }

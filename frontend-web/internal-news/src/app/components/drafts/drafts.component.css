@@ -72,6 +72,54 @@
     transition: background-color 0.2s;
 }
 
+.draft-card .action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.draft-card textarea {
+  width: 95%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.draft-card .action-buttons .approve-button,
+.draft-card .action-buttons .decline-button {
+  flex: 1;
+  margin: 5px 0;
+  background-color: #28a745;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.draft-card .action-buttons .approve-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.draft-card .action-buttons .decline-button {
+  background-color: #dc3545;
+}
+
+.draft-card .action-buttons .decline-button:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
 .modal-overlay {
     display: none;
     position: fixed;
@@ -121,6 +169,40 @@
     transform: scale(1.2);
   }
   
+  .modal-content {
+    animation: fadeIn 0.3s ease-out;
+  }  
+
+  .alert-box-error {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    text-align: center;
+  }
+  
+  .alert-box-error.show {
+    display: block;
+  }
+  
+  .alert-box-success {
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+      text-align: center;
+    }
+  
+  .alert-box-success.show {
+    display: block;
+  }
+  
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -131,7 +213,3 @@
       transform: translate(-50%, -50%) scale(1);
     }
   }
-  
-  .modal-content {
-    animation: fadeIn 0.3s ease-out;
-  }  

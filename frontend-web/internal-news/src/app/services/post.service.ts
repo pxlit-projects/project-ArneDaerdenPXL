@@ -23,8 +23,8 @@ export class PostService {
         return this.http.get<Post[]>(`${this.apiUrl}/drafts`);
     }
 
-    getPostById(id: number): Observable<Post[]> {
-        return this.http.get<Post[]>(`${this.apiUrl}/${id}`);
+    getPostById(id: number): Observable<Post> {
+        return this.http.get<Post>(`${this.apiUrl}/${id}`);
     }
 
     updatePost(postId: number, updatedPost: Post): Observable<Post> {

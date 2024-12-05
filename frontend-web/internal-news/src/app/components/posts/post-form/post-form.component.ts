@@ -11,6 +11,12 @@ import { Router } from '@angular/router';
   imports: [CommonModule, ReactiveFormsModule],
   template: `
     <h2>Create a New Post</h2>
+    @if(showAlertSuccess) {
+      <div class="alert-box-success">{{ alertMessage }}</div>
+    }
+    @if(showAlertError) {
+      <div class="alert-box-error">{{ alertMessage }}</div>
+    }
     <div class="form-container">
         <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
@@ -30,23 +36,18 @@ import { Router } from '@angular/router';
 
             <div class="form-buttons">
                 <button type="button" (click)="saveDraft()" [disabled]="postForm.invalid">Save Draft</button>
-                <button type="button" (click)="publishPost()" [disabled]="postForm.invalid">Publish</button>
+                <button type="button" (click)="publishPost()" [disabled]="postForm.invalid" [style.visibility]="'hidden'">Publish</button>
             </div>
         </form>
     </div>
-
-    @if (alertMessage) {
-        <div class="alert" [ngClass]="alertClass">
-            {{ alertMessage }}
-        </div>
-    }
   `,
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent implements OnInit {
   postForm: FormGroup;
-  alertMessage: string | null = null;
-  alertClass: string = '';
+  showAlertSuccess: boolean = false;
+  showAlertError: boolean = false;
+  alertMessage: string = '';
 
   constructor(private fb: FormBuilder, private postService: PostService, private router: Router) {
       this.postForm = this.fb.group({
@@ -68,27 +69,27 @@ export class PostFormComponent implements OnInit {
   }
 
   submitPost(isPublished: boolean): void {
-      if (this.postForm.valid) {
-          const postToSubmit: Post = { ...this.postForm.value, isPublished };
-          this.postService.createPost(postToSubmit).subscribe({
-              next: (response) => {
-                  console.log(isPublished ? 'Post published' : 'Post saved as draft', response);
-                  this.alertMessage = 'Successfully added the post!';
-                  this.alertClass = 'alert-success';
-                  this.resetForm();
-                  if (isPublished) {
-                      this.router.navigate(['/posts']);
-                  } else {
-                      this.router.navigate(['/drafts']);
-                  }
-              },
-              error: (err) => {
-                  console.error('Error submitting post:', err);
-                  this.alertMessage = 'Something went wrong. Please try again.';
-                  this.alertClass = 'alert-danger';
-              }
-          });
-      }
+    if (this.postForm.valid) {
+      const postToSubmit: Post = { ...this.postForm.value, isPublished };
+      this.postService.createPost(postToSubmit).subscribe({
+        next: (response) => {
+          console.log(isPublished ? 'Post published' : 'Post saved as draft', response);
+          this.showAlertMessage('Post added successfully.', "success");
+          this.resetForm();
+          setTimeout(() => {
+            if (isPublished) {
+              this.router.navigate(['/posts']);
+            } else {
+              this.router.navigate(['/drafts']);
+            }
+          }, 5000);
+        },
+        error: (err) => {
+          console.error('Error submitting post:', err);
+          this.showAlertMessage('Error adding post.', "error");
+        }
+      });
+    }
   }
 
   resetForm(): void {
@@ -98,6 +99,24 @@ export class PostFormComponent implements OnInit {
           author: '',
           isPublished: false
       });
+  }
+
+  showAlertMessage(message: string, reason: string): void {
+    if(reason === "success") {
+      console.log(message);
+      this.alertMessage = message;
+      this.showAlertSuccess = true;
+      setTimeout(() => {
+        this.showAlertSuccess = false;
+      }, 5000);
+    } else {
+        console.error(message);
+        this.alertMessage = message;
+        this.showAlertError = true;
+        setTimeout(() => {
+            this.showAlertError = false;
+        }, 5000);
+    }
   }
 
   onSubmit(): void {

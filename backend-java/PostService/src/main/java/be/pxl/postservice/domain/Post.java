@@ -1,4 +1,4 @@
-package be.pxl.postservice.model;
+package be.pxl.postservice.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +23,7 @@ public class Post {
     private String title;
     private String content;
     private String author;
+    private String status;
     private LocalDate date = LocalDate.now();
     private Boolean isPublished;
 }
