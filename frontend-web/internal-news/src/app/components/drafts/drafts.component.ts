@@ -59,7 +59,7 @@ export class DraftsComponent {
     });
     setTimeout(() => {
       this.router.navigate(['/posts']);
-    }, 10);
+    }, 50);
   }
 
   openModal(draft: Post): void {
