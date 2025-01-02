@@ -82,7 +82,7 @@ export class PostFormComponent implements OnInit {
             } else {
               this.router.navigate(['/drafts']);
             }
-          }, 5000);
+          }, 3000);
         },
         error: (err) => {
           console.error('Error submitting post:', err);
@@ -108,14 +108,14 @@ export class PostFormComponent implements OnInit {
       this.showAlertSuccess = true;
       setTimeout(() => {
         this.showAlertSuccess = false;
-      }, 5000);
+      }, 3000);
     } else {
         console.error(message);
         this.alertMessage = message;
         this.showAlertError = true;
         setTimeout(() => {
             this.showAlertError = false;
-        }, 5000);
+        }, 3000);
     }
   }
 

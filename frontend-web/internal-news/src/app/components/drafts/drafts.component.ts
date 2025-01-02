@@ -103,7 +103,7 @@ export class DraftsComponent {
       this.showAlertMessage('Draft approved successfully.', "success");
       setTimeout(() => {
         this.loadDrafts();
-      }, 50);
+      }, 100);
     }
   }
 
@@ -125,7 +125,7 @@ export class DraftsComponent {
       this.showAlertMessage('Draft declined successfully.', "success");
       setTimeout(() => {
         this.loadDrafts();
-      }, 10);
+      }, 100);
     }
   }  
 
@@ -147,7 +147,7 @@ export class DraftsComponent {
           this.showAlertMessage('Draft published successfully.', "success");
           setTimeout(() => {
             this.router.navigate(['/posts']);
-          }, 5000);
+          }, 3000);
         });
       } else {
         this.showAlertMessage('Post must be approved before publishing.', "error");
@@ -162,14 +162,14 @@ export class DraftsComponent {
       this.showAlertSuccess = true;
       setTimeout(() => {
         this.showAlertSuccess = false;
-      }, 5000);
+      }, 3000);
     } else {
         console.error(message);
         this.alertMessage = message;
         this.showAlertError = true;
         setTimeout(() => {
             this.showAlertError = false;
-        }, 5000);
+        }, 3000);
     }
   }
 
