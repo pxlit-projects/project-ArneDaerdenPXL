@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ReviewRepository extends JpaRepository<Review, Long> {
-    Optional<Review> findByPostId(Long postId);
+    Review findByPostId(Long postId);
 }

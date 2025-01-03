@@ -7,6 +7,9 @@ import be.pxl.reviewservice.repository.ReviewRepository;
 import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
 
+import java.util.List;
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class ReviewService {
@@ -15,8 +18,10 @@ public class ReviewService {
 
     public void approvePost(Long postId, String comment) {
         try {
-            Review review = reviewRepository.findByPostId(postId)
-                    .orElse(new Review());
+            Review review = reviewRepository.findByPostId(postId);
+            if (review == null) {
+                review = new Review();
+            }
             review.setPostId(postId);
             review.setStatus("Approved");
             review.setComments(comment);
@@ -26,7 +31,7 @@ public class ReviewService {
                     .message("Post Approved")
                     .sender("author")
                     .build();
-            notificationClient.sendNotification(notificationRequest);
+            //notificationClient.sendNotification(notificationRequest);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -34,8 +39,10 @@ public class ReviewService {
 
     public void declinePost(Long postId, String comment) {
         try {
-            Review review = reviewRepository.findByPostId(postId)
-                    .orElse(new Review());
+            Review review = reviewRepository.findByPostId(postId);
+            if (review == null) {
+                review = new Review();
+            }
             review.setPostId(postId);
             review.setStatus("Rejected");
             review.setComments(comment);
@@ -45,9 +52,13 @@ public class ReviewService {
                     .message("Post declined")
                     .sender("author")
                     .build();
-            notificationClient.sendNotification(notificationRequest);
+            //notificationClient.sendNotification(notificationRequest);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public Review getReviewByPostId(Long postId) {
+        return reviewRepository.findByPostId(postId);
     }
 }

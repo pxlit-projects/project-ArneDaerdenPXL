@@ -13,12 +13,14 @@
         <module name="NotificationService" />
         <module name="DiscoveryService" />
         <module name="ReviewService" />
+        <module name="AuthenticationService" />
         <module name="GatewayService" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AuthenticationService" options="-parameters" />
       <module name="BackendJava" options="" />
       <module name="CommentService" options="-parameters" />
       <module name="ConfigService" options="-parameters" />

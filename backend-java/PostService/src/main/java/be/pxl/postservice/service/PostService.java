@@ -15,6 +15,7 @@ public class PostService {
     private PostRepository postRepository;
 
     public Post createPost(Post post) {
+        post.setStatus("Declined");
         return postRepository.save(post);
     }
 

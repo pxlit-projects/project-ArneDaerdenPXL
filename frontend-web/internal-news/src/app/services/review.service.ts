@@ -20,7 +20,7 @@ export class ReviewService {
     return this.http.patch<Review>(`${this.apiUrl}/decline/${postId}`, comments);
   }
 
-  getReviewsForPost(postId: number): Observable<Review[]> {
-    return this.http.get<Review[]>(`${this.apiUrl}/post/${postId}`);
+  getReviewForPost(postId: number): Observable<Review> {
+    return this.http.get<Review>(`${this.apiUrl}/post/${postId}`);
   }
 }

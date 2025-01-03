@@ -17,10 +17,11 @@ import { Post } from '../../../models/post.model';
     <textarea id="content" formControlName="content" class="form-control"></textarea>
   </div>
 
-  <div class="form-group">
+  <!-- Removed the Author field as it is now taken from the logged-in user -->
+  <!-- <div class="form-group">
     <label for="author">Author</label>
     <input id="author" formControlName="author" class="form-control" />
-  </div>
+  </div> -->
 
   <button type="submit" class="submit-btn" [disabled]="editForm.invalid">Update Post</button>
 </form>`,

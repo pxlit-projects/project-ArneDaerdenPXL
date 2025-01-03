@@ -29,6 +29,7 @@
 		<module>GatewayService</module>
 		<module>CommentService</module>
         <module>NotificationService</module>
+        <module>AuthenticationService</module>
     </modules>
 	<scm>
 		<connection/>

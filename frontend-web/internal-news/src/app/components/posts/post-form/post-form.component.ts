@@ -29,10 +29,11 @@ import { Router } from '@angular/router';
                 <textarea id="content" formControlName="content" placeholder="Write your content here"></textarea>
             </div>
 
-            <div class="form-group">
+            <!-- Removed the Author field as it is now taken from the logged-in user -->
+            <!-- <div class="form-group">
                 <label for="author">Author:</label>
                 <input id="author" formControlName="author" type="text" placeholder="Author's name" />
-            </div>
+            </div> -->
 
             <div class="form-buttons">
                 <button type="button" (click)="saveDraft()" [disabled]="postForm.invalid">Save Draft</button>
@@ -48,33 +49,65 @@ export class PostFormComponent implements OnInit {
   showAlertSuccess: boolean = false;
   showAlertError: boolean = false;
   alertMessage: string = '';
+  loggedInUsername: string = '';
+  isLoggedIn: boolean = false;
 
   constructor(private fb: FormBuilder, private postService: PostService, private router: Router) {
-      this.postForm = this.fb.group({
-          title: ['', Validators.required],
-          content: ['', Validators.required],
-          author: ['', Validators.required],
-          isPublished: [false]
-      });
+    this.postForm = this.fb.group({
+      title: ['', Validators.required],
+      content: ['', Validators.required],
+      isPublished: [false]
+    });
+    this.checkLoginStatus();
+    if (!this.isLoggedIn) {
+      this.router.navigate(['/login']);
+    }
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.checkLoginStatus();
+  }
+
+  checkLoginStatus(): void {
+    const token = localStorage.getItem('token');
+    if (token) {
+      try {
+        const role = localStorage.getItem('role');
+        const username = localStorage.getItem('username');
+        if (token && role === 'author') {
+          this.isLoggedIn = true;
+          if (username) {
+            this.loggedInUsername = username;
+            console.log('Logged in as:', this.loggedInUsername);
+          }
+        }
+      } catch (e) {
+        console.error('Invalid token:', e);
+        this.isLoggedIn = false;
+      }
+    }
+  }
 
   saveDraft(): void {
-      this.submitPost(false);
+    this.submitPost(false);
   }
 
   publishPost(): void {
-      this.submitPost(true);
+    this.submitPost(true);
   }
 
   submitPost(isPublished: boolean): void {
     if (this.postForm.valid) {
-      const postToSubmit: Post = { ...this.postForm.value, isPublished };
+      const postToSubmit: Post = { 
+        ...this.postForm.value, 
+        author: this.loggedInUsername,
+        isPublished 
+      };
+      
       this.postService.createPost(postToSubmit).subscribe({
         next: (response) => {
           console.log(isPublished ? 'Post published' : 'Post saved as draft', response);
-          this.showAlertMessage('Post added successfully.', "success");
+          this.showAlertMessage('Post added successfully.', 'success');
           this.resetForm();
           setTimeout(() => {
             if (isPublished) {
@@ -86,23 +119,22 @@ export class PostFormComponent implements OnInit {
         },
         error: (err) => {
           console.error('Error submitting post:', err);
-          this.showAlertMessage('Error adding post.', "error");
+          this.showAlertMessage('Error adding post.', 'error');
         }
       });
     }
   }
 
   resetForm(): void {
-      this.postForm.reset({
-          title: '',
-          content: '',
-          author: '',
-          isPublished: false
-      });
+    this.postForm.reset({
+      title: '',
+      content: '',
+      isPublished: false
+    });
   }
 
   showAlertMessage(message: string, reason: string): void {
-    if(reason === "success") {
+    if (reason === 'success') {
       console.log(message);
       this.alertMessage = message;
       this.showAlertSuccess = true;
@@ -110,18 +142,18 @@ export class PostFormComponent implements OnInit {
         this.showAlertSuccess = false;
       }, 3000);
     } else {
-        console.error(message);
-        this.alertMessage = message;
-        this.showAlertError = true;
-        setTimeout(() => {
-            this.showAlertError = false;
-        }, 3000);
+      console.error(message);
+      this.alertMessage = message;
+      this.showAlertError = true;
+      setTimeout(() => {
+        this.showAlertError = false;
+      }, 3000);
     }
   }
 
   onSubmit(): void {
-      if (this.postForm.valid) {
-          console.log('Post form submitted');
-      }
+    if (this.postForm.valid) {
+      console.log('Post form submitted');
+    }
   }
 }
