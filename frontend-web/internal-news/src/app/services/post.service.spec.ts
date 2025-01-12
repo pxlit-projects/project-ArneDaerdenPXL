@@ -38,7 +38,7 @@ describe('PostServiceService', () => {
     });
 
     it('should create a post', () => {
-      const dummyPost: Post = { id: 1, title: 'Test Post', content: 'This is a test post', isDraft: false };
+      const dummyPost: Post = { id: 1, title: 'Test Post', content: 'This is a test post', author: 'Author', status: 'Declined', isPublished: false, date: '2021-07-01T00:00:00.000Z' };
 
       service.createPost(dummyPost).subscribe(post => {
         expect(post).toEqual(dummyPost);

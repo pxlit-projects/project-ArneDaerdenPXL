@@ -83,5 +83,16 @@ describe('AuthService', () => {
       expect(user).toBeNull();
       });
     });
+
+    it('should retrieve token from localStorage on initialization', () => {
+      const token = 'test-token';
+      spyOn(localStorage, 'getItem').and.callFake((key: string): string | null => {
+      return key === 'token' ? token : null;
+      });
+
+      const service = TestBed.inject(AuthService);
+
+      expect(localStorage.getItem).toHaveBeenCalledWith('token');
+    });
   });
 });

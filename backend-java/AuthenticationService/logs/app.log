@@ -23,3 +23,17 @@
 2025-01-09T14:09:27.521+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login successful for username: testUser
 2025-01-09T14:09:27.751+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Registration request received for username: newUser
 2025-01-09T14:09:27.752+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - User registered successfully with username: newUser
+2025-01-12T22:04:14.587+0100 INFO               [main]                         be.pxl.services.service.integration.AuthenticationServiceIntegrationTest - Starting AuthenticationServiceIntegrationTest using Java 17.0.12 with PID 44960 (started by farik in C:\PXL\AON\Fullstack-Java\project-ArneDaerdenPXL\backend-java\AuthenticationService)
+2025-01-12T22:04:14.588+0100 DEBUG              [main]                         be.pxl.services.service.integration.AuthenticationServiceIntegrationTest - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-12T22:04:14.589+0100 INFO               [main]                         be.pxl.services.service.integration.AuthenticationServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2025-01-12T22:04:18.487+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login request received for username: testUser
+2025-01-12T22:04:18.488+0100 ERROR              [main]                         be.pxl.services.controller.AuthenticationController - Login failed for username: testUser. Error: Invalid credentials
+2025-01-12T22:04:18.506+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Registration request received for username: newUser
+2025-01-12T22:04:18.507+0100 ERROR              [main]                         be.pxl.services.controller.AuthenticationController - Registration failed for username: newUser. Error: Username already exists
+2025-01-12T22:04:18.513+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login request received for username: testUser
+2025-01-12T22:04:18.513+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login successful for username: testUser
+2025-01-12T22:04:18.567+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Registration request received for username: newUser
+2025-01-12T22:04:18.567+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - User registered successfully with username: newUser
+2025-01-12T22:07:03.871+0100 INFO               [main]                         be.pxl.services.service.integration.AuthenticationServiceIntegrationTest - Starting AuthenticationServiceIntegrationTest using Java 17.0.12 with PID 26784 (started by farik in C:\PXL\AON\Fullstack-Java\project-ArneDaerdenPXL\backend-java\AuthenticationService)
+2025-01-12T22:07:03.872+0100 DEBUG              [main]                         be.pxl.services.service.integration.AuthenticationServiceIntegrationTest - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-12T22:07:03.872+0100 INFO               [main]                         be.pxl.services.service.integration.AuthenticationServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
