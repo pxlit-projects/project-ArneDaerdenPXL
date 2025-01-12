@@ -137,6 +137,8 @@
 
 .comments-section li {
   margin-bottom: 10px;
+  max-width: 100%;
+  word-break: break-all;
 }
 
 .add-comment {
@@ -147,6 +149,7 @@
 
 .add-comment input {
     flex: 1;
+    height: fit-content;
 }
 
 .add-comment button {
@@ -189,7 +192,6 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     resize: vertical;
-    margin-bottom: 16px;
     font-family: 'Arial', sans-serif;
   }
   

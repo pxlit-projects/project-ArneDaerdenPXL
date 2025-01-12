@@ -22,6 +22,7 @@ import { Router } from '@angular/router';
             formControlName="username"
             type="text"
             placeholder="Enter your username"
+            (keydown.enter)="onSubmit()"
           />
           @if(loginForm.controls['username'].invalid && loginForm.controls['username'].touched) {
             <div class="alert alert-error">Username is required.</div>
@@ -34,6 +35,7 @@ import { Router } from '@angular/router';
             formControlName="password"
             type="password"
             placeholder="Enter your password"
+            (keydown.enter)="onSubmit()"
           />
           @if(loginForm.controls['password'].invalid && loginForm.controls['password'].touched) {
             <div class="alert alert-error">Password is required.</div>

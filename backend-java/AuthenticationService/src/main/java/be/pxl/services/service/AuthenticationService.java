@@ -25,10 +25,16 @@ public class AuthenticationService {
     private PasswordEncoder passwordEncoder;
 
     public AuthResponse login(LoginRequest request) {
+        log.info("Login attempt for username: {}", request.getUsername());
+
         User user = userRepository.findByUsername(request.getUsername())
-                .orElseThrow(() -> new RuntimeException("User not found"));
+                .orElseThrow(() -> {
+                    log.error("User {} not found", request.getUsername());
+                    return new RuntimeException("User not found");
+                });
 
         if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
+            log.error("Invalid credentials for username: {}", request.getUsername());
             throw new RuntimeException("Invalid credentials");
         }
 
@@ -40,7 +46,10 @@ public class AuthenticationService {
     }
 
     public User register(RegisterRequest request) {
+        log.info("Registration attempt for username: {}", request.getUsername());
+
         if (userRepository.findByUsername(request.getUsername()).isPresent()) {
+            log.error("Username {} already exists", request.getUsername());
             throw new RuntimeException("Username already exists");
         }
 
@@ -50,7 +59,7 @@ public class AuthenticationService {
         user.setRole(request.getRole());
 
         User savedUser = userRepository.save(user);
-        log.info("User {} registered successfully", savedUser.getUsername());
+        log.info("User {} registered successfully with role: {}", savedUser.getUsername(), savedUser.getRole());
 
         return savedUser;
     }

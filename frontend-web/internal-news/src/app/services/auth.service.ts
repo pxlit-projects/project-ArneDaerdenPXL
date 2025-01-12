@@ -15,7 +15,7 @@ export class AuthService {
   }
 
   login(username: string, password: string): Observable<any> {
-    return this.http.post('http://localhost:8083/api/auth/login', { username, password })
+    return this.http.post('http://localhost:8085/api/auth/login', { username, password })
       .pipe(
         tap((response: any) => {
           localStorage.setItem('token', response.token);
@@ -26,7 +26,7 @@ export class AuthService {
   }
 
   register(username: string, password: string, role: string): Observable<any> {
-    return this.http.post('http://localhost:8083/api/auth/register', { username, password, role });
+    return this.http.post('http://localhost:8085/api/auth/register', { username, password, role });
   }
 
   logout() {

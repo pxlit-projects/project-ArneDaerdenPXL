@@ -25,6 +25,7 @@ import { AuthService } from '../../../services/auth.service';
             formControlName="username"
             type="text"
             placeholder="Enter your username"
+            (keydown.enter)="onSubmit()"
           />
           @if(registerForm.controls['username'].invalid && registerForm.controls['username'].touched) {
             <div class="alert alert-error">Username is required.</div>
@@ -37,6 +38,7 @@ import { AuthService } from '../../../services/auth.service';
             formControlName="password"
             type="password"
             placeholder="Enter your password"
+            (keydown.enter)="onSubmit()"
           />
           @if(registerForm.controls['password'].invalid && registerForm.controls['password'].touched) {
             <div class="alert alert-error">Password is required.</div>

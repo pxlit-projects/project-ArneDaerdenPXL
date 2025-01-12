@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Table(name = "review")
 public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +22,8 @@ public class Review {
 
     @Column(nullable = false)
     private String status;
+
+    private String reviewer;
 
     @Column(nullable = false)
     private String comments;

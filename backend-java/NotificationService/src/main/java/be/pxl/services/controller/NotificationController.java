@@ -1,6 +1,7 @@
 package be.pxl.services.controller;
 
-import be.pxl.services.services.NotificationService;
+import be.pxl.services.domain.dto.NotificationRequest;
+import be.pxl.services.service.NotificationService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -17,7 +18,9 @@ public class NotificationController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void sendMessage(@RequestBody Notification notification) {
-        notificationService.sendMessage(notification);
+    public void sendMessage(@RequestBody NotificationRequest notificationRequest) {
+        log.info("Received notification request: {}", notificationRequest);
+        notificationService.sendMessage(notificationRequest);
+        log.info("Notification sent successfully.");
     }
 }

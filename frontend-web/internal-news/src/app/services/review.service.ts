@@ -8,7 +8,7 @@ import { PostService } from './post.service';
   providedIn: 'root',
 })
 export class ReviewService {
-  private apiUrl = 'http://localhost:8082/api/reviews';
+  private apiUrl = 'http://localhost:8085/api/reviews';
 
   constructor(private http: HttpClient) {}
 

@@ -1,0 +1,3 @@
+2025-01-09T15:10:32.116+0100 INFO               [main]                         be.pxl.services.controller.CommentControllerTest - Starting CommentControllerTest using Java 21.0.2 with PID 23184 (started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\CommentService)
+2025-01-09T15:10:32.117+0100 DEBUG              [main]                         be.pxl.services.controller.CommentControllerTest - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T15:10:32.118+0100 INFO               [main]                         be.pxl.services.controller.CommentControllerTest - No active profile set, falling back to 1 default profile: "default"

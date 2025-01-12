@@ -176,6 +176,21 @@ export class DraftsComponent {
       this.showAlertMessage('Draft approved successfully.', 'success');
       setTimeout(() => this.loadDrafts(), 100);
       this.loadDrafts();
+    } else {
+      const draftToUpdate = this.drafts.find((draft) => draft.id === id);
+      if (draftToUpdate) {
+        draftToUpdate.status = 'Approved';
+        forkJoin([
+          this.reviewService.approvePost(id, ""),
+          this.postService.updatePost(draftToUpdate.id, draftToUpdate),
+        ]).subscribe(() => {
+          this.drafts = this.drafts.filter((draft) => draft.id !== id);
+          delete this.comments[id];
+        });
+      }
+      this.showAlertMessage('Draft approved successfully.', 'success');
+      setTimeout(() => this.loadDrafts(), 100);
+      this.loadDrafts();
     }
   }
 
@@ -191,6 +206,21 @@ export class DraftsComponent {
         draftToUpdate.status = 'Declined';
         forkJoin([
           this.reviewService.rejectPost(id, comment),
+          this.postService.updatePost(draftToUpdate.id, draftToUpdate),
+        ]).subscribe(() => {
+          this.drafts = this.drafts.filter((draft) => draft.id !== id);
+          delete this.comments[id];
+        });
+      }
+      this.showAlertMessage('Draft declined successfully.', 'success');
+      setTimeout(() => this.loadDrafts(), 100);
+      this.loadDrafts();
+    } else {
+      const draftToUpdate = this.drafts.find((draft) => draft.id === id);
+      if (draftToUpdate) {
+        draftToUpdate.status = 'Declined';
+        forkJoin([
+          this.reviewService.rejectPost(id, ""),
           this.postService.updatePost(draftToUpdate.id, draftToUpdate),
         ]).subscribe(() => {
           this.drafts = this.drafts.filter((draft) => draft.id !== id);

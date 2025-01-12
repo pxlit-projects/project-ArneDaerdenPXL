@@ -74,7 +74,8 @@ import { FormsModule } from '@angular/forms';
                   <input
                     type="text"
                     [(ngModel)]="newComments[post.id]"
-                    placeholder="Add a comment..."
+                    placeholder="Add a comment... "
+                    (keydown.enter)="addComment(post.id)"
                   />
                   <button (click)="addComment(post.id)">Post</button>
                 </div>
@@ -95,9 +96,14 @@ import { FormsModule } from '@angular/forms';
       <div class="modal-content">
         <button class="close-btn" (click)="closeCommentModal()">×</button>
         <h3>Edit Comment</h3>
+        <p>Max 255 characters!</p>
+        @if(showAlertFormError) {
+          <div class="alert-box-error">{{ alertMessage }}</div>
+        }
         @if (editingComment) {
           <textarea [(ngModel)]="editingComment.content"  class="comment-textarea"></textarea>
         }
+        <p>Characters: {{ this.editingComment?.content?.length }}</p>
         <button (click)="submitCommentEdit()"  class="save-btn">Save</button>
       </div>
     }
@@ -120,6 +126,7 @@ export class PostsComponent {
   editingPostId: number | null = null;
   showAlertSuccess: boolean = false;
   showAlertError: boolean = false;
+  showAlertFormError: boolean = false;
   alertMessage: string = '';
 
   constructor(
@@ -151,7 +158,7 @@ export class PostsComponent {
         const username = localStorage.getItem('username');
         if (token) {
           this.isLoggedIn = true;
-          if (role === 'author' && username) {
+          if (username) {
             this.loggedInUsername = username;
           }
         }
@@ -172,6 +179,10 @@ export class PostsComponent {
   addComment(postId: number): void {
     const commentText = this.newComments[postId];
     if (!commentText) return;
+    if (commentText.length > 255) {
+      this.showAlertMessage('Comment cannot exceed 255 characters.', 'error');
+      return
+    }
 
     const newComment: Comment = {
       id: null,
@@ -249,7 +260,12 @@ export class PostsComponent {
   }
 
   submitCommentEdit(): void {
+    
     if (this.editingComment && this.editingPostId !== null) {
+      if (this.editingComment?.content.length > 255) {
+        this.showAlertFormMessage('Comment cannot exceed 255 characters.', 'error');
+        return
+      }
       this.commentService.updateComment(this.editingComment).subscribe(() => {
         this.ngOnInit();
         this.closeCommentModal();
@@ -265,6 +281,7 @@ export class PostsComponent {
     this.commentService.deleteComment(commentId).subscribe(() => {
       this.comments[postId] = this.comments[postId].filter((c) => c.id !== commentId);
     });
+    this.showAlertMessage('Comment deleted successfully.', 'success');
   }  
 
   showAlertMessage(message: string, reason: string): void {
@@ -276,6 +293,14 @@ export class PostsComponent {
       this.alertMessage = message;
       this.showAlertError = true;
       setTimeout(() => this.showAlertError = false, 3000);
+    }
+  }
+
+  showAlertFormMessage(message: string, reason: string): void {
+    if (reason === 'error') {
+      this.alertMessage = message;
+      this.showAlertFormError = true;
+      setTimeout(() => this.showAlertFormError = false, 3000);
     }
   }
 }

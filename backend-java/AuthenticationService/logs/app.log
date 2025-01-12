@@ -1,0 +1,25 @@
+2025-01-09T14:06:49.461+0100 INFO               [main]                         be.pxl.services.util.JwtUtilTest - Starting JwtUtilTest using Java 21.0.2 with PID 21224 (started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService)
+2025-01-09T14:06:49.471+0100 DEBUG              [main]                         be.pxl.services.util.JwtUtilTest - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:06:49.472+0100 INFO               [main]                         be.pxl.services.util.JwtUtilTest - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:06:54.488+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login request received for username: testUser
+2025-01-09T14:06:54.493+0100 ERROR              [main]                         be.pxl.services.controller.AuthenticationController - Login failed for username: testUser. Error: Invalid credentials
+2025-01-09T14:06:54.562+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Registration request received for username: newUser
+2025-01-09T14:06:54.563+0100 ERROR              [main]                         be.pxl.services.controller.AuthenticationController - Registration failed for username: newUser. Error: Username already exists
+2025-01-09T14:06:54.584+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login request received for username: testUser
+2025-01-09T14:06:54.586+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login successful for username: testUser
+2025-01-09T14:06:54.722+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Registration request received for username: newUser
+2025-01-09T14:06:54.722+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - User registered successfully with username: newUser
+2025-01-09T14:08:45.928+0100 INFO               [main]                         be.pxl.services.util.JwtUtilTest - Starting JwtUtilTest using Java 21.0.2 with PID 21256 (started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService)
+2025-01-09T14:08:45.929+0100 DEBUG              [main]                         be.pxl.services.util.JwtUtilTest - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:08:45.930+0100 INFO               [main]                         be.pxl.services.util.JwtUtilTest - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:09:23.859+0100 INFO               [main]                         be.pxl.services.AuthenticationAppTest - Starting AuthenticationAppTest using Java 21.0.2 with PID 21256 (started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService)
+2025-01-09T14:09:23.859+0100 DEBUG              [main]                         be.pxl.services.AuthenticationAppTest - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:09:23.859+0100 INFO               [main]                         be.pxl.services.AuthenticationAppTest - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:09:27.356+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login request received for username: testUser
+2025-01-09T14:09:27.367+0100 ERROR              [main]                         be.pxl.services.controller.AuthenticationController - Login failed for username: testUser. Error: Invalid credentials
+2025-01-09T14:09:27.479+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Registration request received for username: newUser
+2025-01-09T14:09:27.480+0100 ERROR              [main]                         be.pxl.services.controller.AuthenticationController - Registration failed for username: newUser. Error: Username already exists
+2025-01-09T14:09:27.517+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login request received for username: testUser
+2025-01-09T14:09:27.521+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Login successful for username: testUser
+2025-01-09T14:09:27.751+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - Registration request received for username: newUser
+2025-01-09T14:09:27.752+0100 INFO               [main]                         be.pxl.services.controller.AuthenticationController - User registered successfully with username: newUser

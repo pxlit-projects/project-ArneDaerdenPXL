@@ -1,0 +1,192 @@
+2025-01-06T22:44:02.144+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - Starting PostServiceApplication using Java 21.0.2 with PID 12156 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\PostService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:44:02.144+0100 DEBUG              [restartedMain]                be.pxl.postservice.PostServiceApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:44:02.144+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:44:02.420+0100 INFO               [restartedMain]                be.pxl.reviewservice.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.2 with PID 3312 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\ReviewService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:44:02.421+0100 DEBUG              [restartedMain]                be.pxl.reviewservice.ReviewServiceApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:44:02.421+0100 INFO               [restartedMain]                be.pxl.reviewservice.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:44:06.653+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - Started PostServiceApplication in 5.712 seconds (process running for 3866.17)
+2025-01-06T22:44:06.929+0100 INFO               [restartedMain]                be.pxl.reviewservice.ReviewServiceApplication - Started ReviewServiceApplication in 5.719 seconds (process running for 1092.16)
+2025-01-06T22:45:47.518+0100 INFO               [restartedMain]                be.pxl.services.NotificationServiceApp - Starting NotificationServiceApp using Java 21.0.2 with PID 25648 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\NotificationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:45:47.519+0100 DEBUG              [restartedMain]                be.pxl.services.NotificationServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:45:47.519+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:45:47.519+0100 INFO               [restartedMain]                be.pxl.services.NotificationServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:45:47.519+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:45:47.519+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:45:47.791+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Starting CommentServiceApp using Java 21.0.2 with PID 14588 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\CommentService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:45:47.792+0100 DEBUG              [restartedMain]                be.pxl.services.CommentServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:45:47.792+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:45:51.464+0100 INFO               [restartedMain]                be.pxl.services.NotificationServiceApp - Started NotificationServiceApp in 5.173 seconds (process running for 1784.09)
+2025-01-06T22:45:53.059+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Started CommentServiceApp in 6.548 seconds (process running for 3966.048)
+2025-01-06T22:45:53.088+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 6.815 seconds (process running for 3971.091)
+2025-01-06T22:45:55.659+0100 INFO               [restartedMain]                be.pxl.services.NotificationServiceApp - Starting NotificationServiceApp using Java 21.0.2 with PID 25648 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\NotificationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:45:55.659+0100 DEBUG              [restartedMain]                be.pxl.services.NotificationServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:45:55.659+0100 INFO               [restartedMain]                be.pxl.services.NotificationServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:45:59.301+0100 INFO               [restartedMain]                be.pxl.services.NotificationServiceApp - Started NotificationServiceApp in 4.739 seconds (process running for 1791.926)
+2025-01-06T22:46:17.744+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Starting CommentServiceApp using Java 21.0.2 with PID 14588 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\CommentService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:46:17.744+0100 DEBUG              [restartedMain]                be.pxl.services.CommentServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:46:17.744+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:46:22.293+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Started CommentServiceApp in 5.644 seconds (process running for 3995.283)
+2025-01-06T22:46:26.507+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Starting CommentServiceApp using Java 21.0.2 with PID 14588 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\CommentService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:46:26.507+0100 DEBUG              [restartedMain]                be.pxl.services.CommentServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:46:26.507+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:46:30.885+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Started CommentServiceApp in 5.469 seconds (process running for 4003.874)
+2025-01-06T22:46:37.372+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Starting CommentServiceApp using Java 21.0.2 with PID 14588 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\CommentService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:46:37.372+0100 DEBUG              [restartedMain]                be.pxl.services.CommentServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:46:37.372+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:46:41.845+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Started CommentServiceApp in 5.559 seconds (process running for 4014.834)
+2025-01-06T22:46:46.051+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Starting CommentServiceApp using Java 21.0.2 with PID 14588 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\CommentService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:46:46.051+0100 DEBUG              [restartedMain]                be.pxl.services.CommentServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:46:46.051+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:46:50.458+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Started CommentServiceApp in 5.495 seconds (process running for 4023.448)
+2025-01-06T22:47:02.634+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:47:02.634+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:47:02.634+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:47:07.295+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 5.767 seconds (process running for 4045.298)
+2025-01-06T22:47:11.477+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:47:11.478+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:47:11.478+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:47:16.134+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 5.735 seconds (process running for 4054.137)
+2025-01-06T22:47:38.338+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:47:38.338+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:47:38.338+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:47:42.849+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 5.589 seconds (process running for 4080.852)
+2025-01-06T22:48:06.675+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:48:06.675+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:48:06.675+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:48:07.565+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T22:48:07.565+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T22:48:08.878+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T22:48:08.879+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T22:48:08.879+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T22:48:08.899+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T22:48:11.476+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:48:11.476+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:48:11.476+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:48:12.257+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T22:48:12.257+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T22:48:13.561+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T22:48:13.561+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T22:48:13.562+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T22:48:13.584+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T22:49:46.677+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:49:46.677+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:49:46.677+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:49:47.547+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T22:49:47.548+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T22:49:48.844+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T22:49:48.845+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T22:49:48.845+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T22:49:48.864+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T22:58:11.237+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:58:11.237+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:58:11.237+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:58:12.415+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T22:58:12.416+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T22:58:13.810+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T22:58:13.811+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T22:58:13.811+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T22:58:13.844+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T22:59:40.895+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T22:59:40.895+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T22:59:40.895+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T22:59:41.743+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T22:59:41.743+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T22:59:43.067+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T22:59:43.067+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T22:59:43.068+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T22:59:43.088+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T23:13:45.976+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T23:13:45.977+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T23:13:45.977+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T23:13:48.484+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 22396 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T23:13:48.484+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T23:13:48.484+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T23:13:49.426+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T23:13:49.427+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T23:13:49.862+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T23:13:49.862+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T23:13:49.863+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T23:13:49.871+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T23:13:50.404+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 1.991 seconds (process running for 5648.406)
+2025-01-06T23:18:09.372+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 6456 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T23:18:09.373+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T23:18:09.373+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T23:18:13.110+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T23:18:13.111+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T23:18:13.718+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T23:18:13.721+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T23:18:13.721+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T23:18:13.735+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T23:18:14.644+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 6.065 seconds (process running for 6.853)
+2025-01-06T23:18:39.673+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-06T23:18:39.673+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-06T23:18:39.700+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-06T23:18:39.700+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-06T23:18:44.954+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.AuthenticationController - Login request received for username: admin
+2025-01-06T23:18:44.954+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.AuthenticationController - Login request received for username: admin
+2025-01-06T23:18:44.954+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.service.AuthenticationService - Login attempt for username: admin
+2025-01-06T23:18:44.954+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.service.AuthenticationService - Login attempt for username: admin
+2025-01-06T23:18:45.129+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.util.JwtUtil  - Generating token for user: admin
+2025-01-06T23:18:45.129+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.util.JwtUtil  - Generating token for user: admin
+2025-01-06T23:18:45.184+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.util.JwtUtil  - Token generated successfully for user: admin
+2025-01-06T23:18:45.184+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.util.JwtUtil  - Token generated successfully for user: admin
+2025-01-06T23:18:45.184+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.service.AuthenticationService - User admin logged in successfully
+2025-01-06T23:18:45.184+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.service.AuthenticationService - User admin logged in successfully
+2025-01-06T23:18:45.184+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.AuthenticationController - Login successful for username: admin
+2025-01-06T23:18:45.184+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.AuthenticationController - Login successful for username: admin
+2025-01-06T23:18:45.231+0100 INFO               [http-nio-8081-exec-2]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-06T23:18:45.231+0100 INFO               [http-nio-8081-exec-2]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-06T23:18:45.242+0100 INFO               [http-nio-8081-exec-2]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-06T23:18:45.242+0100 INFO               [http-nio-8081-exec-2]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-06T23:18:45.339+0100 INFO               [http-nio-8081-exec-3]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-06T23:18:45.339+0100 INFO               [http-nio-8081-exec-3]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-06T23:18:45.351+0100 INFO               [http-nio-8081-exec-3]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-06T23:18:45.351+0100 INFO               [http-nio-8081-exec-3]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-06T23:18:45.368+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 2
+2025-01-06T23:18:45.368+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 1
+2025-01-06T23:18:45.369+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.service.CommentService - Fetching comments for postId: 2
+2025-01-06T23:18:45.369+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.service.CommentService - Fetching comments for postId: 1
+2025-01-06T23:18:45.378+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.service.CommentService - Retrieved 1 comments for postId: 2
+2025-01-06T23:18:45.378+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.CommentController - Successfully fetched 1 comments for postId: 2
+2025-01-06T23:18:45.378+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.service.CommentService - Retrieved 4 comments for postId: 1
+2025-01-06T23:18:45.379+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.CommentController - Successfully fetched 4 comments for postId: 1
+2025-01-06T23:30:31.369+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 6456 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T23:30:31.371+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T23:30:31.371+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T23:30:32.340+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T23:30:32.340+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T23:30:32.784+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T23:30:32.785+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T23:30:32.785+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T23:30:32.794+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T23:30:33.225+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 1.989 seconds (process running for 745.434)
+2025-01-06T23:30:37.702+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 6456 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T23:30:37.702+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T23:30:37.702+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T23:30:38.598+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T23:30:38.598+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T23:30:39.067+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T23:30:39.068+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T23:30:39.068+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T23:30:39.075+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T23:30:39.553+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 1.933 seconds (process running for 751.762)
+2025-01-06T23:32:57.257+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 6456 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T23:32:57.257+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T23:32:57.257+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T23:32:58.022+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T23:32:58.023+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T23:32:58.307+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T23:32:58.307+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T23:32:58.307+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T23:32:58.313+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T23:32:58.669+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 1.491 seconds (process running for 890.878)
+2025-01-06T23:33:03.135+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 6456 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-06T23:33:03.135+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-06T23:33:03.135+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-06T23:33:03.909+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-06T23:33:03.910+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-06T23:33:04.212+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-06T23:33:04.213+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-06T23:33:04.213+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-06T23:33:04.219+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-06T23:33:04.566+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 1.503 seconds (process running for 896.775)

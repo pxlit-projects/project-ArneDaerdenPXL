@@ -1,0 +1,220 @@
+2025-01-09T14:35:38.901+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 2208 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-09T14:35:38.910+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:35:38.911+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:35:45.177+0100 INFO               [restartedMain]                be.pxl.services.NotificationServiceApp - Starting NotificationServiceApp using Java 21.0.2 with PID 11540 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\NotificationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-09T14:35:45.179+0100 DEBUG              [restartedMain]                be.pxl.services.NotificationServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:35:45.180+0100 INFO               [restartedMain]                be.pxl.services.NotificationServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:35:48.503+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - Starting PostServiceApplication using Java 21.0.2 with PID 9964 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\PostService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-09T14:35:48.506+0100 DEBUG              [restartedMain]                be.pxl.postservice.PostServiceApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:35:48.507+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:35:53.144+0100 INFO               [restartedMain]                be.pxl.services.NotificationServiceApp - Started NotificationServiceApp in 10.511 seconds (process running for 11.917)
+2025-01-09T14:35:54.049+0100 INFO               [restartedMain]                be.pxl.reviewservice.ReviewServiceApplication - Starting ReviewServiceApplication using Java 21.0.2 with PID 18504 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\ReviewService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-09T14:35:54.053+0100 DEBUG              [restartedMain]                be.pxl.reviewservice.ReviewServiceApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:35:54.054+0100 INFO               [restartedMain]                be.pxl.reviewservice.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:35:57.134+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Starting CommentServiceApp using Java 21.0.2 with PID 19288 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\CommentService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-09T14:35:57.135+0100 DEBUG              [restartedMain]                be.pxl.services.CommentServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:35:57.136+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:36:06.047+0100 INFO               [restartedMain]                be.pxl.reviewservice.ReviewServiceApplication - Started ReviewServiceApplication in 14.541 seconds (process running for 16.055)
+2025-01-09T14:36:08.304+0100 INFO               [restartedMain]                be.pxl.services.CommentServiceApp - Started CommentServiceApp in 13.703 seconds (process running for 15.113)
+2025-01-09T14:37:17.634+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Starting AuthServiceApp using Java 21.0.2 with PID 4036 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\AuthenticationService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-09T14:37:17.636+0100 DEBUG              [restartedMain]                be.pxl.services.AuthServiceApp - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:37:17.637+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:37:20.515+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - Starting PostServiceApplication using Java 21.0.2 with PID 9540 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\PostService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-09T14:37:20.516+0100 DEBUG              [restartedMain]                be.pxl.postservice.PostServiceApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:37:20.517+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:37:23.196+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Initializing PasswordEncoder...
+2025-01-09T14:37:23.197+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - PasswordEncoder initialized successfully.
+2025-01-09T14:37:25.042+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Configuring HTTP security...
+2025-01-09T14:37:25.047+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - Setting up CORS configuration...
+2025-01-09T14:37:25.048+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - CORS configuration set successfully.
+2025-01-09T14:37:25.071+0100 INFO               [restartedMain]                be.pxl.services.config.SecurityConfig - HTTP security configured successfully.
+2025-01-09T14:37:28.435+0100 INFO               [restartedMain]                be.pxl.services.AuthServiceApp - Started AuthServiceApp in 13.371 seconds (process running for 14.783)
+2025-01-09T14:38:32.375+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - Starting PostServiceApplication using Java 21.0.2 with PID 8740 (C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java\PostService\target\classes started by farik in C:\PXL\3AON\Fullstack - Java\project\project-ArneDaerdenPXL\backend-java)
+2025-01-09T14:38:32.376+0100 DEBUG              [restartedMain]                be.pxl.postservice.PostServiceApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-01-09T14:38:32.377+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-09T14:38:42.468+0100 INFO               [restartedMain]                be.pxl.postservice.PostServiceApplication - Started PostServiceApplication in 12.397 seconds (process running for 13.824)
+2025-01-09T14:38:49.518+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.AuthenticationController - Login request received for username: admin
+2025-01-09T14:38:49.518+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.AuthenticationController - Login request received for username: admin
+2025-01-09T14:38:49.518+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.service.AuthenticationService - Login attempt for username: admin
+2025-01-09T14:38:49.518+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.service.AuthenticationService - Login attempt for username: admin
+2025-01-09T14:38:49.734+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.util.JwtUtil  - Generating token for user: admin
+2025-01-09T14:38:49.734+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.util.JwtUtil  - Generating token for user: admin
+2025-01-09T14:38:49.815+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.util.JwtUtil  - Token generated successfully for user: admin
+2025-01-09T14:38:49.815+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.util.JwtUtil  - Token generated successfully for user: admin
+2025-01-09T14:38:49.815+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.service.AuthenticationService - User admin logged in successfully
+2025-01-09T14:38:49.816+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.AuthenticationController - Login successful for username: admin
+2025-01-09T14:38:49.816+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.service.AuthenticationService - User admin logged in successfully
+2025-01-09T14:38:49.816+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.AuthenticationController - Login successful for username: admin
+2025-01-09T14:39:42.172+0100 INFO               [http-nio-8081-exec-3]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-09T14:39:42.173+0100 INFO               [http-nio-8081-exec-3]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-09T14:39:42.397+0100 INFO               [http-nio-8081-exec-3]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-09T14:39:42.397+0100 INFO               [http-nio-8081-exec-3]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-09T14:39:46.085+0100 INFO               [http-nio-8081-exec-4]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-09T14:39:46.086+0100 INFO               [http-nio-8081-exec-4]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-09T14:39:46.105+0100 INFO               [http-nio-8081-exec-4]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-09T14:39:46.105+0100 INFO               [http-nio-8081-exec-4]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-09T14:39:53.388+0100 INFO               [http-nio-8081-exec-5]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-09T14:39:53.388+0100 INFO               [http-nio-8081-exec-5]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-09T14:39:53.409+0100 INFO               [http-nio-8081-exec-5]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-09T14:39:53.409+0100 INFO               [http-nio-8081-exec-5]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-09T14:39:53.571+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 1
+2025-01-09T14:39:53.571+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 2
+2025-01-09T14:39:53.571+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.service.CommentService - Fetching comments for postId: 1
+2025-01-09T14:39:53.571+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.service.CommentService - Fetching comments for postId: 2
+2025-01-09T14:39:53.710+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.service.CommentService - Retrieved 4 comments for postId: 1
+2025-01-09T14:39:53.710+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.service.CommentService - Retrieved 1 comments for postId: 2
+2025-01-09T14:39:53.710+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.CommentController - Successfully fetched 4 comments for postId: 1
+2025-01-09T14:39:53.710+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.CommentController - Successfully fetched 1 comments for postId: 2
+2025-01-09T14:39:58.800+0100 INFO               [http-nio-8081-exec-6]         be.pxl.postservice.controller.PostController - Fetching all draft posts
+2025-01-09T14:39:58.801+0100 INFO               [http-nio-8081-exec-6]         be.pxl.postservice.service.PostService - Fetching drafts...
+2025-01-09T14:39:58.816+0100 INFO               [http-nio-8081-exec-6]         be.pxl.postservice.service.PostService - Found 1 drafts
+2025-01-09T14:39:58.816+0100 INFO               [http-nio-8081-exec-6]         be.pxl.postservice.controller.PostController - Found 1 draft posts
+2025-01-09T14:39:58.925+0100 INFO               [http-nio-8082-exec-1]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 3
+2025-01-09T14:39:58.925+0100 INFO               [http-nio-8082-exec-1]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 3
+2025-01-09T14:39:59.036+0100 INFO               [http-nio-8082-exec-1]         be.pxl.reviewservice.controller.ReviewController - Found 1 reviews for post with ID: 3
+2025-01-09T14:40:13.303+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.AuthenticationController - Login request received for username: user
+2025-01-09T14:40:13.303+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.AuthenticationController - Login request received for username: user
+2025-01-09T14:40:13.304+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.service.AuthenticationService - Login attempt for username: user
+2025-01-09T14:40:13.304+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.service.AuthenticationService - Login attempt for username: user
+2025-01-09T14:40:13.414+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.util.JwtUtil  - Generating token for user: user
+2025-01-09T14:40:13.415+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.util.JwtUtil  - Generating token for user: user
+2025-01-09T14:40:13.415+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.util.JwtUtil  - Token generated successfully for user: user
+2025-01-09T14:40:13.415+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.util.JwtUtil  - Token generated successfully for user: user
+2025-01-09T14:40:13.416+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.service.AuthenticationService - User user logged in successfully
+2025-01-09T14:40:13.416+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.service.AuthenticationService - User user logged in successfully
+2025-01-09T14:40:13.416+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.AuthenticationController - Login successful for username: user
+2025-01-09T14:40:13.416+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.AuthenticationController - Login successful for username: user
+2025-01-09T14:40:13.449+0100 INFO               [http-nio-8081-exec-7]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-09T14:40:13.450+0100 INFO               [http-nio-8081-exec-7]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-09T14:40:13.470+0100 INFO               [http-nio-8081-exec-7]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-09T14:40:13.470+0100 INFO               [http-nio-8081-exec-7]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-09T14:40:13.537+0100 INFO               [http-nio-8081-exec-8]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-09T14:40:13.537+0100 INFO               [http-nio-8081-exec-8]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-09T14:40:13.555+0100 INFO               [http-nio-8081-exec-8]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-09T14:40:13.555+0100 INFO               [http-nio-8081-exec-8]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-09T14:40:13.572+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 1
+2025-01-09T14:40:13.572+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.service.CommentService - Fetching comments for postId: 1
+2025-01-09T14:40:13.581+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.service.CommentService - Retrieved 4 comments for postId: 1
+2025-01-09T14:40:13.581+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.CommentController - Successfully fetched 4 comments for postId: 1
+2025-01-09T14:40:13.591+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 2
+2025-01-09T14:40:13.591+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.service.CommentService - Fetching comments for postId: 2
+2025-01-09T14:40:13.595+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.service.CommentService - Retrieved 1 comments for postId: 2
+2025-01-09T14:40:13.596+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.CommentController - Successfully fetched 1 comments for postId: 2
+2025-01-09T14:40:26.303+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 1
+2025-01-09T14:40:26.304+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 2
+2025-01-09T14:40:26.304+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.service.CommentService - Fetching comments for postId: 1
+2025-01-09T14:40:26.304+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.service.CommentService - Fetching comments for postId: 2
+2025-01-09T14:40:26.311+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.service.CommentService - Retrieved 1 comments for postId: 2
+2025-01-09T14:40:26.312+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.CommentController - Successfully fetched 1 comments for postId: 2
+2025-01-09T14:40:26.313+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.service.CommentService - Retrieved 4 comments for postId: 1
+2025-01-09T14:40:26.313+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.CommentController - Successfully fetched 4 comments for postId: 1
+2025-01-09T14:40:36.773+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.AuthenticationController - Login request received for username: Editor
+2025-01-09T14:40:36.773+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.AuthenticationController - Login request received for username: Editor
+2025-01-09T14:40:36.773+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.service.AuthenticationService - Login attempt for username: Editor
+2025-01-09T14:40:36.774+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.service.AuthenticationService - Login attempt for username: Editor
+2025-01-09T14:40:36.910+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.util.JwtUtil  - Generating token for user: Editor
+2025-01-09T14:40:36.910+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.util.JwtUtil  - Generating token for user: Editor
+2025-01-09T14:40:36.911+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.util.JwtUtil  - Token generated successfully for user: Editor
+2025-01-09T14:40:36.911+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.service.AuthenticationService - User Editor logged in successfully
+2025-01-09T14:40:36.911+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.AuthenticationController - Login successful for username: Editor
+2025-01-09T14:40:36.911+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.util.JwtUtil  - Token generated successfully for user: Editor
+2025-01-09T14:40:36.911+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.service.AuthenticationService - User Editor logged in successfully
+2025-01-09T14:40:36.911+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.AuthenticationController - Login successful for username: Editor
+2025-01-09T14:40:36.946+0100 INFO               [http-nio-8081-exec-9]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-09T14:40:36.946+0100 INFO               [http-nio-8081-exec-9]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-09T14:40:36.968+0100 INFO               [http-nio-8081-exec-9]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-09T14:40:36.968+0100 INFO               [http-nio-8081-exec-9]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-09T14:40:37.032+0100 INFO               [http-nio-8081-exec-10]        be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-09T14:40:37.033+0100 INFO               [http-nio-8081-exec-10]        be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-09T14:40:37.050+0100 INFO               [http-nio-8081-exec-10]        be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-09T14:40:37.051+0100 INFO               [http-nio-8081-exec-10]        be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-09T14:40:37.069+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 1
+2025-01-09T14:40:37.070+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.service.CommentService - Fetching comments for postId: 1
+2025-01-09T14:40:37.071+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 2
+2025-01-09T14:40:37.071+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.service.CommentService - Fetching comments for postId: 2
+2025-01-09T14:40:37.076+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.service.CommentService - Retrieved 1 comments for postId: 2
+2025-01-09T14:40:37.076+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.controller.CommentController - Successfully fetched 1 comments for postId: 2
+2025-01-09T14:40:37.076+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.service.CommentService - Retrieved 4 comments for postId: 1
+2025-01-09T14:40:37.077+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.controller.CommentController - Successfully fetched 4 comments for postId: 1
+2025-01-09T14:40:42.283+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-09T14:40:42.283+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-09T14:40:42.300+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-09T14:40:42.300+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-09T14:40:42.314+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.controller.CommentController - Request to fetch comments for postId: 1
+2025-01-09T14:40:42.314+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 2
+2025-01-09T14:40:42.315+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.service.CommentService - Fetching comments for postId: 1
+2025-01-09T14:40:42.315+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.service.CommentService - Fetching comments for postId: 2
+2025-01-09T14:40:42.321+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.service.CommentService - Retrieved 1 comments for postId: 2
+2025-01-09T14:40:42.322+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.controller.CommentController - Successfully fetched 1 comments for postId: 2
+2025-01-09T14:40:42.322+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.service.CommentService - Retrieved 4 comments for postId: 1
+2025-01-09T14:40:42.322+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.controller.CommentController - Successfully fetched 4 comments for postId: 1
+2025-01-09T14:45:12.768+0100 INFO               [http-nio-8081-exec-4]         be.pxl.postservice.controller.PostController - Fetching all draft posts
+2025-01-09T14:45:12.769+0100 INFO               [http-nio-8081-exec-4]         be.pxl.postservice.service.PostService - Fetching drafts...
+2025-01-09T14:45:12.788+0100 INFO               [http-nio-8081-exec-4]         be.pxl.postservice.service.PostService - Found 1 drafts
+2025-01-09T14:45:12.788+0100 INFO               [http-nio-8081-exec-4]         be.pxl.postservice.controller.PostController - Found 1 draft posts
+2025-01-09T14:45:12.802+0100 INFO               [http-nio-8082-exec-3]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 3
+2025-01-09T14:45:12.803+0100 INFO               [http-nio-8082-exec-3]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 3
+2025-01-09T14:45:12.809+0100 INFO               [http-nio-8082-exec-3]         be.pxl.reviewservice.controller.ReviewController - Found 1 reviews for post with ID: 3
+2025-01-09T14:45:14.628+0100 INFO               [http-nio-8081-exec-5]         be.pxl.postservice.controller.PostController - Fetching all draft posts
+2025-01-09T14:45:14.628+0100 INFO               [http-nio-8081-exec-5]         be.pxl.postservice.service.PostService - Fetching drafts...
+2025-01-09T14:45:14.645+0100 INFO               [http-nio-8081-exec-5]         be.pxl.postservice.service.PostService - Found 1 drafts
+2025-01-09T14:45:14.645+0100 INFO               [http-nio-8081-exec-5]         be.pxl.postservice.controller.PostController - Found 1 draft posts
+2025-01-09T14:45:14.660+0100 INFO               [http-nio-8082-exec-4]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 3
+2025-01-09T14:45:14.660+0100 INFO               [http-nio-8082-exec-4]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 3
+2025-01-09T14:45:14.669+0100 INFO               [http-nio-8082-exec-4]         be.pxl.reviewservice.controller.ReviewController - Found 1 reviews for post with ID: 3
+2025-01-09T14:46:07.346+0100 INFO               [http-nio-8081-exec-6]         be.pxl.postservice.controller.PostController - Creating new post with title: Demo test
+2025-01-09T14:46:07.346+0100 INFO               [http-nio-8081-exec-6]         be.pxl.postservice.service.PostService - Creating post with title: Demo test and initial status: null
+2025-01-09T14:46:07.436+0100 INFO               [http-nio-8081-exec-6]         be.pxl.postservice.service.PostService - Post created successfully with ID: 4
+2025-01-09T14:46:07.437+0100 INFO               [http-nio-8081-exec-6]         be.pxl.postservice.controller.PostController - Created new post with ID: 4
+2025-01-09T14:46:09.810+0100 INFO               [http-nio-8081-exec-7]         be.pxl.postservice.controller.PostController - Fetching all draft posts
+2025-01-09T14:46:09.810+0100 INFO               [http-nio-8081-exec-7]         be.pxl.postservice.service.PostService - Fetching drafts...
+2025-01-09T14:46:09.828+0100 INFO               [http-nio-8081-exec-7]         be.pxl.postservice.service.PostService - Found 2 drafts
+2025-01-09T14:46:09.828+0100 INFO               [http-nio-8081-exec-7]         be.pxl.postservice.controller.PostController - Found 2 draft posts
+2025-01-09T14:46:09.841+0100 INFO               [http-nio-8082-exec-5]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 3
+2025-01-09T14:46:09.842+0100 INFO               [http-nio-8082-exec-5]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 3
+2025-01-09T14:46:09.846+0100 INFO               [http-nio-8082-exec-6]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 4
+2025-01-09T14:46:09.846+0100 INFO               [http-nio-8082-exec-6]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 4
+2025-01-09T14:46:09.849+0100 INFO               [http-nio-8082-exec-5]         be.pxl.reviewservice.controller.ReviewController - Found 1 reviews for post with ID: 3
+2025-01-09T14:46:09.853+0100 INFO               [http-nio-8082-exec-6]         be.pxl.reviewservice.controller.ReviewController - Found 0 reviews for post with ID: 4
+2025-01-09T14:46:10.493+0100 INFO               [http-nio-8081-exec-8]         be.pxl.postservice.controller.PostController - Fetching all draft posts
+2025-01-09T14:46:10.494+0100 INFO               [http-nio-8081-exec-8]         be.pxl.postservice.service.PostService - Fetching drafts...
+2025-01-09T14:46:10.512+0100 INFO               [http-nio-8081-exec-8]         be.pxl.postservice.service.PostService - Found 2 drafts
+2025-01-09T14:46:10.513+0100 INFO               [http-nio-8081-exec-8]         be.pxl.postservice.controller.PostController - Found 2 draft posts
+2025-01-09T14:46:10.530+0100 INFO               [http-nio-8082-exec-7]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 4
+2025-01-09T14:46:10.530+0100 INFO               [http-nio-8082-exec-7]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 4
+2025-01-09T14:46:10.533+0100 INFO               [http-nio-8082-exec-8]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 3
+2025-01-09T14:46:10.533+0100 INFO               [http-nio-8082-exec-8]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 3
+2025-01-09T14:46:10.537+0100 INFO               [http-nio-8082-exec-7]         be.pxl.reviewservice.controller.ReviewController - Found 0 reviews for post with ID: 4
+2025-01-09T14:46:10.539+0100 INFO               [http-nio-8082-exec-8]         be.pxl.reviewservice.controller.ReviewController - Found 1 reviews for post with ID: 3
+2025-01-09T14:46:56.892+0100 INFO               [http-nio-8081-exec-10]        be.pxl.postservice.controller.PostController - Fetching all draft posts
+2025-01-09T14:46:56.893+0100 INFO               [http-nio-8081-exec-10]        be.pxl.postservice.service.PostService - Fetching drafts...
+2025-01-09T14:46:56.912+0100 INFO               [http-nio-8081-exec-10]        be.pxl.postservice.service.PostService - Found 2 drafts
+2025-01-09T14:46:56.912+0100 INFO               [http-nio-8081-exec-10]        be.pxl.postservice.controller.PostController - Found 2 draft posts
+2025-01-09T14:46:56.931+0100 INFO               [http-nio-8082-exec-1]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 3
+2025-01-09T14:46:56.933+0100 INFO               [http-nio-8082-exec-1]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 3
+2025-01-09T14:46:56.935+0100 INFO               [http-nio-8082-exec-2]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 4
+2025-01-09T14:46:56.935+0100 INFO               [http-nio-8082-exec-2]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 4
+2025-01-09T14:46:56.941+0100 INFO               [http-nio-8082-exec-1]         be.pxl.reviewservice.controller.ReviewController - Found 1 reviews for post with ID: 3
+2025-01-09T14:46:56.944+0100 INFO               [http-nio-8082-exec-2]         be.pxl.reviewservice.controller.ReviewController - Found 0 reviews for post with ID: 4
+2025-01-09T14:46:56.994+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.controller.PostController - Fetching all draft posts
+2025-01-09T14:46:56.994+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.service.PostService - Fetching drafts...
+2025-01-09T14:46:57.008+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.service.PostService - Found 2 drafts
+2025-01-09T14:46:57.008+0100 INFO               [http-nio-8081-exec-1]         be.pxl.postservice.controller.PostController - Found 2 draft posts
+2025-01-09T14:46:57.018+0100 INFO               [http-nio-8082-exec-3]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 3
+2025-01-09T14:46:57.018+0100 INFO               [http-nio-8082-exec-4]         be.pxl.reviewservice.controller.ReviewController - Fetching reviews for post with ID: 4
+2025-01-09T14:46:57.018+0100 INFO               [http-nio-8082-exec-3]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 3
+2025-01-09T14:46:57.018+0100 INFO               [http-nio-8082-exec-4]         be.pxl.reviewservice.service.ReviewService - Fetching review for post ID: 4
+2025-01-09T14:46:57.022+0100 INFO               [http-nio-8082-exec-4]         be.pxl.reviewservice.controller.ReviewController - Found 0 reviews for post with ID: 4
+2025-01-09T14:46:57.022+0100 INFO               [http-nio-8082-exec-3]         be.pxl.reviewservice.controller.ReviewController - Found 1 reviews for post with ID: 3
+2025-01-09T14:47:09.531+0100 INFO               [http-nio-8081-exec-2]         be.pxl.postservice.controller.PostController - Fetching all published posts
+2025-01-09T14:47:09.531+0100 INFO               [http-nio-8081-exec-2]         be.pxl.postservice.service.PostService - Fetching published posts...
+2025-01-09T14:47:09.541+0100 INFO               [http-nio-8081-exec-2]         be.pxl.postservice.service.PostService - Found 2 published posts
+2025-01-09T14:47:09.542+0100 INFO               [http-nio-8081-exec-2]         be.pxl.postservice.controller.PostController - Found 2 published posts
+2025-01-09T14:47:09.551+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 2
+2025-01-09T14:47:09.551+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.CommentController - Request to fetch comments for postId: 1
+2025-01-09T14:47:09.551+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.service.CommentService - Fetching comments for postId: 1
+2025-01-09T14:47:09.551+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.service.CommentService - Fetching comments for postId: 2
+2025-01-09T14:47:09.556+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.service.CommentService - Retrieved 1 comments for postId: 2
+2025-01-09T14:47:09.556+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.CommentController - Successfully fetched 1 comments for postId: 2
+2025-01-09T14:47:09.557+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.service.CommentService - Retrieved 4 comments for postId: 1
+2025-01-09T14:47:09.557+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.CommentController - Successfully fetched 4 comments for postId: 1
