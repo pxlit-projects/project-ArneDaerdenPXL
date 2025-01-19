@@ -39,10 +39,11 @@ describe('ReviewService', () => {
 
     it('should approve a post', () => {
       const postId = 1;
+      const author = 'author';
       const comments = 'Approved';
       const mockReview: Review = { id: 1, postId: postId, comments: comments, status: 'approved' };
 
-      service.approvePost(postId, comments).subscribe(review => {
+      service.approvePost(postId, author, comments).subscribe(review => {
         expect(review).toEqual(mockReview);
       });
 
@@ -53,10 +54,11 @@ describe('ReviewService', () => {
 
     it('should reject a post', () => {
       const postId = 1;
+      const author = 'author';
       const comments = 'Rejected';
       const mockReview: Review = { id: 1, postId: postId, comments: comments, status: 'declined' };
 
-      service.rejectPost(postId, comments).subscribe(review => {
+      service.rejectPost(postId, author, comments).subscribe(review => {
         expect(review).toEqual(mockReview);
       });
 

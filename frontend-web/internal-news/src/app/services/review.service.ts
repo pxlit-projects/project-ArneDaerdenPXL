@@ -12,12 +12,12 @@ export class ReviewService {
 
   constructor(private http: HttpClient) {}
 
-  approvePost(postId: number, comments: string): Observable<Review> {
-    return this.http.patch<Review>(`${this.apiUrl}/approve/${postId}`, comments);
+  approvePost(postId: number, reviewer: string, comments: string): Observable<Review> {
+    return this.http.patch<Review>(`${this.apiUrl}/approve/${postId}/${reviewer}`, comments);
   }
 
-  rejectPost(postId: number, comments: string): Observable<Review> {
-    return this.http.patch<Review>(`${this.apiUrl}/decline/${postId}`, comments);
+  rejectPost(postId: number, reviewer: string, comments: string): Observable<Review> {
+    return this.http.patch<Review>(`${this.apiUrl}/decline/${postId}/${reviewer}`, comments);
   }
 
   getReviewForPost(postId: number): Observable<Review> {

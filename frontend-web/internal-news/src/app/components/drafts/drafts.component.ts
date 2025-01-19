@@ -166,7 +166,7 @@ export class DraftsComponent {
       if (draftToUpdate) {
         draftToUpdate.status = 'Approved';
         forkJoin([
-          this.reviewService.approvePost(id, comment),
+          this.reviewService.approvePost(id, this.loggedInUsername, comment),
           this.postService.updatePost(draftToUpdate.id, draftToUpdate),
         ]).subscribe(() => {
           this.drafts = this.drafts.filter((draft) => draft.id !== id);
@@ -177,20 +177,7 @@ export class DraftsComponent {
       setTimeout(() => this.loadDrafts(), 100);
       this.loadDrafts();
     } else {
-      const draftToUpdate = this.drafts.find((draft) => draft.id === id);
-      if (draftToUpdate) {
-        draftToUpdate.status = 'Approved';
-        forkJoin([
-          this.reviewService.approvePost(id, ""),
-          this.postService.updatePost(draftToUpdate.id, draftToUpdate),
-        ]).subscribe(() => {
-          this.drafts = this.drafts.filter((draft) => draft.id !== id);
-          delete this.comments[id];
-        });
-      }
-      this.showAlertMessage('Draft approved successfully.', 'success');
-      setTimeout(() => this.loadDrafts(), 100);
-      this.loadDrafts();
+      this.showAlertMessage('Comment is required for approval.', 'error');
     }
   }
 
@@ -205,7 +192,7 @@ export class DraftsComponent {
       if (draftToUpdate) {
         draftToUpdate.status = 'Declined';
         forkJoin([
-          this.reviewService.rejectPost(id, comment),
+          this.reviewService.rejectPost(id, this.loggedInUsername, comment),
           this.postService.updatePost(draftToUpdate.id, draftToUpdate),
         ]).subscribe(() => {
           this.drafts = this.drafts.filter((draft) => draft.id !== id);
@@ -216,20 +203,7 @@ export class DraftsComponent {
       setTimeout(() => this.loadDrafts(), 100);
       this.loadDrafts();
     } else {
-      const draftToUpdate = this.drafts.find((draft) => draft.id === id);
-      if (draftToUpdate) {
-        draftToUpdate.status = 'Declined';
-        forkJoin([
-          this.reviewService.rejectPost(id, ""),
-          this.postService.updatePost(draftToUpdate.id, draftToUpdate),
-        ]).subscribe(() => {
-          this.drafts = this.drafts.filter((draft) => draft.id !== id);
-          delete this.comments[id];
-        });
-      }
-      this.showAlertMessage('Draft declined successfully.', 'success');
-      setTimeout(() => this.loadDrafts(), 100);
-      this.loadDrafts();
+      this.showAlertMessage('Comment is required for approval.', 'error');
     }
   }
 

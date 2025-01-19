@@ -73,7 +73,7 @@ describe('DraftsComponent', () => {
     mockPostService.updatePost.and.returnValue(of(mockDraft));
 
     component.approveDraft(1, 'Great post!');
-    expect(mockReviewService.approvePost).toHaveBeenCalledWith(1, 'Great post!');
+    expect(mockReviewService.approvePost).toHaveBeenCalledWith(1, "author", 'Great post!');
     expect(mockPostService.updatePost).toHaveBeenCalled();
     expect(component.showAlertSuccess).toBeTrue();
   });
