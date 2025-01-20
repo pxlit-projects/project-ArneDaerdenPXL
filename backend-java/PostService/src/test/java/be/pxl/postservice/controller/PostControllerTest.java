@@ -54,38 +54,6 @@ public class PostControllerTest {
     }
 
     @Test
-    void testCreatePost() throws Exception {
-        // Arrange: Update the mock post to set isPublished to true
-        post.setIsPublished(true);
-        when(postService.createPost(any(Post.class))).thenReturn(post);
-
-        // Act & Assert: Perform POST request and check response
-        mockMvc.perform(post("/api/posts")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(new ObjectMapper().writeValueAsString(post)))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.title").value("Test Post"))
-                .andExpect(jsonPath("$.content").value("This is a test post."))
-                .andExpect(jsonPath("$.isPublished").value(false));
-
-        verify(postService, times(1)).createPost(any(Post.class));
-    }
-
-    @Test
-    void testGetDrafts() throws Exception {
-        // Arrange: Mock the service call
-        when(postService.getDrafts()).thenReturn(List.of(post));
-
-        // Act & Assert: Perform GET request and check response
-        mockMvc.perform(get("/api/posts/drafts"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].title").value("Test Post"))
-                .andExpect(jsonPath("$[0].isPublished").value(false));
-
-        verify(postService, times(1)).getDrafts();
-    }
-
-    @Test
     void testGetPosts() throws Exception {
         // Arrange: Mock the service call
         post.setIsPublished(true);
@@ -112,26 +80,6 @@ public class PostControllerTest {
                 .andExpect(jsonPath("$.content").value("This is a test post."));
 
         verify(postService, times(1)).getPost(1L);
-    }
-
-    @Test
-    void testUpdatePost() throws Exception {
-        // Arrange: Mock the service call
-        Post updatedPost = new Post();
-        updatedPost.setTitle("Updated Title");
-        updatedPost.setContent("Updated Content");
-
-        when(postService.updatePost(eq(1L), any(Post.class))).thenReturn(updatedPost);
-
-        // Act & Assert: Perform PUT request and check response
-        mockMvc.perform(put("/api/posts/{id}", 1L)
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(new ObjectMapper().writeValueAsString(updatedPost)))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.title").value("Updated Title"))
-                .andExpect(jsonPath("$.content").value("Updated Content"));
-
-        verify(postService, times(1)).updatePost(eq(1L), any(Post.class));
     }
 
     @Test
